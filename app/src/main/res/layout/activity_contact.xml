@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactActivity"
+    android:background="@drawable/fondo">
+
+    <RelativeLayout
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Conocénos"
+            android:gravity="right"
+            android:textSize="40dp"
+            android:textColor="#FFFF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="58dp"
+            android:gravity="right"
+            android:text="Redes Sociales"
+            android:textColor="#FFFF"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="136dp"
+            android:layout_marginTop="680dp"
+            android:text="Enviar"
+            android:backgroundTint="#397250"
+            android:textColorLink="#781616" />
+
+        <ImageView
+            android:id="@+id/instagram"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="730dp"
+            android:src="@drawable/instagram"
+            android:layout_width="40dp"
+            android:layout_height="90dp"/>
+
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_marginTop="730dp"
+            android:layout_toRightOf="@+id/instagram"
+            android:src="@drawable/facebook"
+            android:layout_marginStart="45dp"
+            android:layout_width="40dp"
+            android:layout_height="90dp"/>
+
+        <ImageView
+            android:id="@+id/twitter"
+            android:layout_marginTop="730dp"
+            android:layout_toRightOf="@+id/facebook"
+            android:src="@drawable/twitter"
+            android:layout_marginStart="45dp"
+            android:layout_width="40dp"
+            android:layout_height="90dp"/>
+
+        <ImageView
+            android:id="@+id/linkedin"
+            android:layout_marginTop="730dp"
+            android:layout_toRightOf="@+id/twitter"
+            android:src="@drawable/linkedin"
+            android:layout_marginStart="45dp"
+            android:layout_width="40dp"
+            android:layout_height="90dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="120dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Formulario"
+            android:textSize="32dp"
+            android:textColor="#FFFF"
+            android:textAlignment="center">
+        </TextView>
+
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:layout_marginTop="70dp"
+            android:textColor="#3E1F4D">
+        </EditText>
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo electrónico"
+            android:layout_marginTop="30dp"
+            android:textColor="#3E1F4D">
+        </EditText>
+
+        <EditText
+            android:id="@+id/editPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefóno"
+            android:layout_marginTop="30dp"
+            android:textColor="#3E1F4D">
+        </EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="¿Cómo nos conociste?"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#397250"
+            android:textAlignment="center">
+        </TextView>
+        
+        <RadioGroup
+            android:layout_marginTop="8dp"
+            android:id="@+id/radioGroupOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                
+                <RadioButton
+                    android:id="@+id/radioTwitter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Twitter">
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radioLinkedIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="LinkedIn">
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radioGoogle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Google">
+                </RadioButton>
+
+            </LinearLayout>
+        </RadioGroup>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Deseas que te enviemos información por SMS?"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textAlignment="center">
+
+        </TextView>
+        
+        <LinearLayout
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sí">
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/checkNot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="No">
+            </CheckBox>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

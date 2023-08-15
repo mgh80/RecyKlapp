@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HydroTrack</string>
+    <string name="title_main">Pantalla de Inicio</string>"
+    <string name="title_water_consumption">Registro Consumo de Agua</string>"
+    <string name="title_tips">Consejos Reducir Consumo de Agua</string>"
+    <string name="title_progress">Progreso Consumo de Agua</string>"
+    <string name="title_info">Información</string>"
+    <string name="title_settings">Configuración</string>"
+
+</resources>
